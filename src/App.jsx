@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import Layout from "./layout/Layout";
 import Dashboard from "./pages/Dashboard";
+import BookMngList from "./pages/BookMng/BookMngList";
 
 
 // Protected Route Component
@@ -62,6 +63,7 @@ const App = () => {
         >
           <Route index element={<Navigate to="/dashboard" replace />} />
           <Route path="dashboard" element={<Dashboard />} />
+          <Route path="/book-mng-list" element={<BookMngList />} />
           
           {/* Add your other protected routes here as you build them */}
           {/* <Route path="/users/users-list" element={<Users />} />
